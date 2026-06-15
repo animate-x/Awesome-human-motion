@@ -1,0 +1,675 @@
+{
+  "resources": [
+    {
+      "title": "AIMoCap Video2Motion",
+      "category": "Motion Capture",
+      "date": "2026-06",
+      "venue": "Tech Report 2026",
+      "featured": true,
+      "project": "https://animate-x.github.io/aimocap/",
+      "github": "animate-x/aimocap-video2motion",
+      "hf": "https://huggingface.co/spaces/animtex/AIMoCap",
+      "paper": ""
+    },
+    {
+      "title": "GVHMR",
+      "category": "Motion Capture",
+      "date": "2024-12",
+      "venue": "CVPR 2025",
+      "project": "https://zju3dv.github.io/gvhmr/",
+      "github": "zju3dv/GVHMR",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2412.18086"
+    },
+    {
+      "title": "TRAM",
+      "category": "Motion Capture",
+      "date": "2024-10",
+      "venue": "CVPR 2025",
+      "project": "https://yufu-wang.github.io/tram4d/",
+      "github": "yufu-wang/tram",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2410.13967"
+    },
+    {
+      "title": "WHAM",
+      "category": "Motion Capture",
+      "date": "2024-03",
+      "venue": "CVPR 2024",
+      "project": "https://wham.is.tue.mpg.de/",
+      "github": "yohanshin/WHAM",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2312.07531"
+    },
+    {
+      "title": "RoHM",
+      "category": "Motion Capture",
+      "date": "2024-03",
+      "venue": "CVPR 2024",
+      "project": "https://sanweiliti.github.io/ROHM/ROHM.html",
+      "github": "sanweiliti/RoHM",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2401.08518"
+    },
+    {
+      "title": "TokenHMR",
+      "category": "Motion Capture",
+      "date": "2024-03",
+      "venue": "CVPR 2024",
+      "project": "",
+      "github": "saidwivedi/TokenHMR",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2404.16752"
+    },
+    {
+      "title": "4DHumans",
+      "category": "Motion Capture",
+      "date": "2023-08",
+      "venue": "ICCV 2023",
+      "project": "https://shubham-goel.github.io/4dhumans/",
+      "github": "shubham-goel/4D-Humans",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2305.20091"
+    },
+    {
+      "title": "MotionBERT",
+      "category": "Motion Capture",
+      "date": "2023-07",
+      "venue": "ICCV 2023",
+      "project": "https://motionbert.github.io/",
+      "github": "Walter0807/MotionBERT",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2210.06551"
+    },
+    {
+      "title": "SLAHMR",
+      "category": "Motion Capture",
+      "date": "2023-03",
+      "venue": "CVPR 2023",
+      "project": "https://vye16.github.io/slahmr/",
+      "github": "vye16/slahmr",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2304.13952"
+    },
+    {
+      "title": "HybrIK",
+      "category": "Motion Capture",
+      "date": "2021-04",
+      "venue": "CVPR 2021",
+      "project": "https://jeffffffli.github.io/HybrIK/",
+      "github": "Jeff-sjtu/HybrIK",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2011.14672"
+    },
+    {
+      "title": "XRMoCap",
+      "category": "Motion Capture",
+      "date": "2021-01",
+      "venue": "Open Source",
+      "project": "https://github.com/openxrlab/xrmocap",
+      "github": "openxrlab/xrmocap",
+      "hf": "",
+      "paper": ""
+    },
+    {
+      "title": "EasyMocap",
+      "category": "Motion Capture",
+      "date": "2020-09",
+      "venue": "Open Source",
+      "project": "https://github.com/zju3dv/EasyMocap",
+      "github": "zju3dv/EasyMocap",
+      "hf": "",
+      "paper": ""
+    },
+    {
+      "title": "Kimodo",
+      "category": "Motion Generation",
+      "date": "2026-03",
+      "venue": "ArXiv 2026",
+      "project": "https://research.nvidia.com/labs/toronto-ai/kimodo/",
+      "github": "nv-tlabs/kimodo",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2603.15546"
+    },
+    {
+      "title": "HY-Motion-1.0",
+      "category": "Motion Generation",
+      "date": "2026-01",
+      "venue": "ArXiv 2026",
+      "project": "https://github.com/Tencent-Hunyuan/HY-Motion-1.0",
+      "github": "Tencent-Hunyuan/HY-Motion-1.0",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2603.14477"
+    },
+    {
+      "title": "GENMO",
+      "category": "Motion Generation",
+      "date": "2025-07",
+      "venue": "ICCV 2025",
+      "project": "https://research.nvidia.com/labs/dair/genmo/",
+      "github": "",
+      "hf": "",
+      "paper": ""
+    },
+    {
+      "title": "Being-M0",
+      "category": "Motion Generation",
+      "date": "2025-06",
+      "venue": "ICML 2025",
+      "project": "https://beingbeyond.github.io/Being-M0/",
+      "github": "",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2410.03311"
+    },
+    {
+      "title": "SALAD",
+      "category": "Motion Generation",
+      "date": "2025-06",
+      "venue": "CVPR 2025",
+      "project": "https://seokhyeonhong.github.io/projects/salad/",
+      "github": "seokhyeonhong/long-mib",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2411.08097"
+    },
+    {
+      "title": "LLaMo",
+      "category": "Motion Generation",
+      "date": "2025-06",
+      "venue": "CVPR 2025",
+      "project": "https://github.com/ILGLJ/LLaMo",
+      "github": "ILGLJ/LLaMo",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2411.16805"
+    },
+    {
+      "title": "MotionLCM",
+      "category": "Motion Generation",
+      "date": "2024-10",
+      "venue": "ECCV 2024",
+      "project": "https://dai-wenxun.github.io/MotionLCM-page/",
+      "github": "Dai-Wenxun/MotionLCM",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2404.19759"
+    },
+    {
+      "title": "MoMask",
+      "category": "Motion Generation",
+      "date": "2024-08",
+      "venue": "ECCV 2024",
+      "project": "https://ericguo5513.github.io/momask/",
+      "github": "EricGuo5513/momask-codes",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2312.00063"
+    },
+    {
+      "title": "MLD",
+      "category": "Motion Generation",
+      "date": "2023-06",
+      "venue": "CVPR 2023",
+      "project": "https://chenxin.tech/mld/",
+      "github": "ChenFengYe/motion-latent-diffusion",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2304.10853"
+    },
+    {
+      "title": "MotionGPT",
+      "category": "Motion Generation",
+      "date": "2023-06",
+      "venue": "NeurIPS 2023",
+      "project": "https://motion-gpt.github.io/",
+      "github": "OpenMotionLab/MotionGPT",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2306.10900"
+    },
+    {
+      "title": "T2M-GPT",
+      "category": "Motion Generation",
+      "date": "2023-06",
+      "venue": "CVPR 2023",
+      "project": "https://mael-zys.github.io/T2M-GPT/",
+      "github": "mael-zys/T2M-GPT",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2301.06052"
+    },
+    {
+      "title": "MotionDiffuse",
+      "category": "Motion Generation",
+      "date": "2022-10",
+      "venue": "TPAMI 2024",
+      "project": "https://mingyuan-zhang.github.io/projects/MotionDiffuse.html",
+      "github": "mingyuan-zhang/MotionDiffuse",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2208.15001"
+    },
+    {
+      "title": "MDM",
+      "category": "Motion Generation",
+      "date": "2022-09",
+      "venue": "ICLR 2023",
+      "project": "https://guytevet.github.io/mdm-page/",
+      "github": "GuyTevet/motion-diffusion-model",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2209.14916"
+    },
+    {
+      "title": "InterMask",
+      "category": "Motion Interaction",
+      "date": "2024-10",
+      "venue": "ArXiv 2024",
+      "project": "https://github.com/neu-vi/InterMask",
+      "github": "neu-vi/InterMask",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2410.17144"
+    },
+    {
+      "title": "HOI-Diff",
+      "category": "Motion Interaction",
+      "date": "2024-06",
+      "venue": "CVPR 2024",
+      "project": "https://neu-vi.github.io/HOI-Diff/",
+      "github": "neu-vi/HOI-Diff",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2312.06553"
+    },
+    {
+      "title": "ComMDM",
+      "category": "Motion Interaction",
+      "date": "2024-03",
+      "venue": "ICLR 2024",
+      "project": "https://sinmdm.github.io/ComMDM-page/",
+      "github": "SinMDM/ComMDM",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2308.02659"
+    },
+    {
+      "title": "InterGen",
+      "category": "Motion Interaction",
+      "date": "2024-01",
+      "venue": "IJCV 2024",
+      "project": "https://tr3e.github.io/intergen-page/",
+      "github": "tr3e/InterGen",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2304.05684"
+    },
+    {
+      "title": "InterDiff",
+      "category": "Motion Interaction",
+      "date": "2023-03",
+      "venue": "ICCV 2023",
+      "project": "https://sirui-xu.github.io/InterDiff/",
+      "github": "sirui-xu/InterDiff",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2306.04806"
+    },
+    {
+      "title": "OMOMO",
+      "category": "Motion Interaction",
+      "date": "2023-03",
+      "venue": "CVPR 2023",
+      "project": "https://lijiaman.github.io/projects/omomo/",
+      "github": "lijiaman/omomo_release",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2303.15983"
+    },
+    {
+      "title": "BEHAVE",
+      "category": "Motion Interaction",
+      "date": "2022-06",
+      "venue": "CVPR 2022",
+      "project": "https://virtualhumans.mpi-inf.mpg.de/behave/",
+      "github": "virtualhumans/behave",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2204.06950"
+    },
+    {
+      "title": "InterHuman",
+      "category": "Motion Interaction",
+      "date": "2023-09",
+      "venue": "Dataset",
+      "project": "https://tr3e.github.io/intergen-page/",
+      "github": "tr3e/InterGen",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2304.05684"
+    },
+    {
+      "title": "Kimodo Robot Motion",
+      "category": "Humanoid Simulation",
+      "date": "2026-03",
+      "venue": "ArXiv 2026",
+      "project": "https://research.nvidia.com/labs/toronto-ai/kimodo/",
+      "github": "nv-tlabs/kimodo",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2603.15546"
+    },
+    {
+      "title": "ASAP",
+      "category": "Humanoid Simulation",
+      "date": "2025-02",
+      "venue": "ArXiv 2025",
+      "project": "https://agile.human2humanoid.com/",
+      "github": "agilexrobotics/asap",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2502.01143"
+    },
+    {
+      "title": "HOVER",
+      "category": "Humanoid Simulation",
+      "date": "2024-10",
+      "venue": "ArXiv 2024",
+      "project": "https://hover-versatile-humanoid.github.io/",
+      "github": "hover-versatile-humanoid/hover",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2410.21229"
+    },
+    {
+      "title": "HumanoidBench",
+      "category": "Humanoid Simulation",
+      "date": "2024-03",
+      "venue": "NeurIPS 2024",
+      "project": "https://humanoid-bench.github.io/",
+      "github": "cmu-humanoid-bench/humanoid-bench",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2403.10506"
+    },
+    {
+      "title": "PHC",
+      "category": "Humanoid Simulation",
+      "date": "2023-05",
+      "venue": "SIGGRAPH 2023",
+      "project": "https://zhengyiluo.github.io/PHC-Site/",
+      "github": "ZhengyiLuo/PHC",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2305.15475"
+    },
+    {
+      "title": "ASE",
+      "category": "Humanoid Simulation",
+      "date": "2022-06",
+      "venue": "SIGGRAPH 2022",
+      "project": "https://xbpeng.github.io/projects/ASE/index.html",
+      "github": "nv-tlabs/ASE",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2205.01906"
+    },
+    {
+      "title": "AMP",
+      "category": "Humanoid Simulation",
+      "date": "2021-04",
+      "venue": "SIGGRAPH 2021",
+      "project": "https://xbpeng.github.io/projects/AMP/index.html",
+      "github": "xbpeng/DeepMimic",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2104.02180"
+    },
+    {
+      "title": "Isaac Lab Humanoid",
+      "category": "Humanoid Simulation",
+      "date": "2024-01",
+      "venue": "Toolkit",
+      "project": "https://isaac-sim.github.io/IsaacLab/",
+      "github": "isaac-sim/IsaacLab",
+      "hf": "",
+      "paper": ""
+    },
+    {
+      "title": "Unitree G1 Developer Resources",
+      "category": "Humanoid Simulation",
+      "date": "2024-05",
+      "venue": "Robot Platform",
+      "project": "https://www.unitree.com/g1/",
+      "github": "unitreerobotics/unitree_sdk2",
+      "hf": "",
+      "paper": ""
+    },
+    {
+      "title": "EchoMimicV2",
+      "category": "Motion Video Generation",
+      "date": "2025-06",
+      "venue": "CVPR 2025",
+      "project": "https://antgroup.github.io/ai/echomimic_v2/",
+      "github": "antgroup/echomimic_v2",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2411.10061"
+    },
+    {
+      "title": "HumanDreamer",
+      "category": "Motion Video Generation",
+      "date": "2025-06",
+      "venue": "CVPR 2025",
+      "project": "https://humandreamer.github.io/",
+      "github": "humandreamer/HumanDreamer",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2503.24026"
+    },
+    {
+      "title": "TokenMotion",
+      "category": "Motion Video Generation",
+      "date": "2025-04",
+      "venue": "CVPR 2025",
+      "project": "",
+      "github": "",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2504.08181"
+    },
+    {
+      "title": "X-UniMotion",
+      "category": "Motion Video Generation",
+      "date": "2025-03",
+      "venue": "ArXiv 2025",
+      "project": "https://byteaigc.github.io/X-Unimotion/",
+      "github": "",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2503.06072"
+    },
+    {
+      "title": "Champ",
+      "category": "Motion Video Generation",
+      "date": "2024-03",
+      "venue": "ECCV 2024",
+      "project": "https://fudan-generative-vision.github.io/champ/",
+      "github": "fudan-generative-vision/champ",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2403.14781"
+    },
+    {
+      "title": "MimicMotion",
+      "category": "Motion Video Generation",
+      "date": "2024-06",
+      "venue": "ArXiv 2024",
+      "project": "https://tencent.github.io/MimicMotion/",
+      "github": "Tencent/MimicMotion",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2406.19680"
+    },
+    {
+      "title": "MusePose",
+      "category": "Motion Video Generation",
+      "date": "2024-05",
+      "venue": "Open Source",
+      "project": "https://github.com/TMElyralab/MusePose",
+      "github": "TMElyralab/MusePose",
+      "hf": "",
+      "paper": ""
+    },
+    {
+      "title": "MagicAnimate",
+      "category": "Motion Video Generation",
+      "date": "2023-11",
+      "venue": "CVPR 2024",
+      "project": "https://showlab.github.io/magicanimate/",
+      "github": "magic-research/magic-animate",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2311.16498"
+    },
+    {
+      "title": "Animate Anyone",
+      "category": "Motion Video Generation",
+      "date": "2023-11",
+      "venue": "CVPR 2024",
+      "project": "https://humanaigc.github.io/animate-anyone/",
+      "github": "HumanAIGC/AnimateAnyone",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2311.17117"
+    },
+    {
+      "title": "Motion-X",
+      "category": "Datasets",
+      "date": "2023-07",
+      "venue": "NeurIPS 2023",
+      "project": "https://motion-x-dataset.github.io/",
+      "github": "IDEA-Research/Motion-X",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2307.00818"
+    },
+    {
+      "title": "EMDB",
+      "category": "Datasets",
+      "date": "2023-07",
+      "venue": "ICCV 2023",
+      "project": "https://eth-ait.github.io/emdb/",
+      "github": "",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2305.12003"
+    },
+    {
+      "title": "InterHuman Dataset",
+      "category": "Datasets",
+      "date": "2023-04",
+      "venue": "ArXiv 2023",
+      "project": "https://tr3e.github.io/intergen-page/",
+      "github": "tr3e/InterGen",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2304.05684"
+    },
+    {
+      "title": "BEDLAM",
+      "category": "Datasets",
+      "date": "2023-03",
+      "venue": "CVPR 2023",
+      "project": "https://bedlam.is.tue.mpg.de/",
+      "github": "",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2303.14317"
+    },
+    {
+      "title": "BABEL",
+      "category": "Datasets",
+      "date": "2021-06",
+      "venue": "CVPR 2021",
+      "project": "https://babel.is.tue.mpg.de/",
+      "github": "abhinanda-punnakkal/BABEL",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2106.09696"
+    },
+    {
+      "title": "HumanML3D",
+      "category": "Datasets",
+      "date": "2022-06",
+      "venue": "CVPR 2022",
+      "project": "https://github.com/EricGuo5513/HumanML3D",
+      "github": "EricGuo5513/HumanML3D",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2204.14109"
+    },
+    {
+      "title": "BEHAVE Dataset",
+      "category": "Datasets",
+      "date": "2022-04",
+      "venue": "CVPR 2022",
+      "project": "https://virtualhumans.mpi-inf.mpg.de/behave/",
+      "github": "virtualhumans/behave",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2204.06950"
+    },
+    {
+      "title": "AIST++",
+      "category": "Datasets",
+      "date": "2021-01",
+      "venue": "ICCV 2021",
+      "project": "https://google.github.io/aistplusplus_dataset/",
+      "github": "google/aistplusplus_api",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2101.08779"
+    },
+    {
+      "title": "KIT-ML",
+      "category": "Datasets",
+      "date": "2016-09",
+      "venue": "Dataset",
+      "project": "https://motion-annotation.humanoids.kit.edu/",
+      "github": "",
+      "hf": "",
+      "paper": "https://ieeexplore.ieee.org/document/7550543"
+    },
+    {
+      "title": "AMASS",
+      "category": "Datasets",
+      "date": "2019-06",
+      "venue": "ICCV 2019",
+      "project": "https://amass.is.tue.mpg.de/",
+      "github": "",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/1904.03278"
+    },
+    {
+      "title": "Motion Generation Survey",
+      "category": "Surveys and Benchmarks",
+      "date": "2025-07",
+      "venue": "ArXiv 2025",
+      "project": "https://arxiv.org/abs/2507.05419",
+      "github": "",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2507.05419"
+    },
+    {
+      "title": "Motion Generation Review",
+      "category": "Surveys and Benchmarks",
+      "date": "2024-12",
+      "venue": "ICER 2025",
+      "project": "https://arxiv.org/abs/2412.10458",
+      "github": "",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2412.10458"
+    },
+    {
+      "title": "Human-Centric Foundation Models",
+      "category": "Surveys and Benchmarks",
+      "date": "2025-02",
+      "venue": "ArXiv 2025",
+      "project": "https://arxiv.org/abs/2502.08556",
+      "github": "",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2502.08556"
+    },
+    {
+      "title": "3D Human Interaction Generation Survey",
+      "category": "Surveys and Benchmarks",
+      "date": "2025-03",
+      "venue": "ArXiv 2025",
+      "project": "https://arxiv.org/abs/2503.13120",
+      "github": "",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2503.13120"
+    },
+    {
+      "title": "Human Motion Video Generation Survey",
+      "category": "Surveys and Benchmarks",
+      "date": "2024-07",
+      "venue": "ArXiv 2024",
+      "project": "https://github.com/Winn1y/Awesome-Human-Motion-Video-Generation",
+      "github": "Winn1y/Awesome-Human-Motion-Video-Generation",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2407.08428"
+    },
+    {
+      "title": "VBench",
+      "category": "Surveys and Benchmarks",
+      "date": "2023-11",
+      "venue": "CVPR 2024",
+      "project": "https://vchitect.github.io/VBench-project/",
+      "github": "Vchitect/VBench",
+      "hf": "",
+      "paper": "https://arxiv.org/abs/2311.17982"
+    }
+  ]
+}
