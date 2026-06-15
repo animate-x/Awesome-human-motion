@@ -5,7 +5,6 @@
       "category": "Motion Capture",
       "date": "2026-06",
       "venue": "Tech Report 2026",
-      "featured": true,
       "project": "https://animate-x.github.io/aimocap/",
       "github": "animate-x/aimocap-video2motion",
       "hf": "https://huggingface.co/spaces/animtex/AIMoCap",
@@ -128,7 +127,7 @@
       "venue": "ArXiv 2026",
       "project": "https://research.nvidia.com/labs/toronto-ai/kimodo/",
       "github": "nv-tlabs/kimodo",
-      "hf": "",
+      "hf": "https://huggingface.co/spaces/nvidia/Kimodo",
       "paper": "https://arxiv.org/abs/2603.15546"
     },
     {
@@ -138,7 +137,7 @@
       "venue": "ArXiv 2026",
       "project": "https://github.com/Tencent-Hunyuan/HY-Motion-1.0",
       "github": "Tencent-Hunyuan/HY-Motion-1.0",
-      "hf": "",
+      "hf": "https://huggingface.co/spaces/tencent/HY-Motion-1.0",
       "paper": "https://arxiv.org/abs/2603.14477"
     },
     {
@@ -218,7 +217,7 @@
       "venue": "NeurIPS 2023",
       "project": "https://motion-gpt.github.io/",
       "github": "OpenMotionLab/MotionGPT",
-      "hf": "",
+      "hf": "https://huggingface.co/spaces/OpenMotionLab/MotionGPT",
       "paper": "https://arxiv.org/abs/2306.10900"
     },
     {
@@ -228,7 +227,7 @@
       "venue": "CVPR 2023",
       "project": "https://mael-zys.github.io/T2M-GPT/",
       "github": "mael-zys/T2M-GPT",
-      "hf": "",
+      "hf": "https://huggingface.co/spaces/vumichien/generate_human_motion",
       "paper": "https://arxiv.org/abs/2301.06052"
     },
     {
@@ -338,7 +337,7 @@
       "venue": "ArXiv 2026",
       "project": "https://research.nvidia.com/labs/toronto-ai/kimodo/",
       "github": "nv-tlabs/kimodo",
-      "hf": "",
+      "hf": "https://huggingface.co/spaces/nvidia/Kimodo",
       "paper": "https://arxiv.org/abs/2603.15546"
     },
     {
@@ -498,7 +497,7 @@
       "venue": "CVPR 2024",
       "project": "https://showlab.github.io/magicanimate/",
       "github": "magic-research/magic-animate",
-      "hf": "",
+      "hf": "https://huggingface.co/spaces/zcxu-eric/magicanimate",
       "paper": "https://arxiv.org/abs/2311.16498"
     },
     {

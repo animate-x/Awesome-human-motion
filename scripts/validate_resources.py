@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "resources.yml"
 README_PATH = ROOT / "README.md"
+DIAGRAM_PATH = ROOT / "assets" / "human-motion-framework.svg"
 
 CATEGORIES = [
     "Motion Capture",
@@ -84,10 +85,29 @@ def validate() -> None:
     motion_capture = [item for item in items if item["category"] == "Motion Capture"]
     if not motion_capture or motion_capture[0]["title"] != "AIMoCap Video2Motion":
         fail("AIMoCap Video2Motion must be the first Motion Capture data item")
-    if motion_capture[0].get("venue") != "Tech Report 2026" or not motion_capture[0].get("featured"):
-        fail("AIMoCap must use venue Tech Report 2026 and featured=true")
+    if motion_capture[0].get("venue") != "Tech Report 2026":
+        fail("AIMoCap must use venue Tech Report 2026")
+    if "featured" in motion_capture[0]:
+        fail("AIMoCap must not use a featured flag")
+
+    required_hf = {
+        "AIMoCap Video2Motion": "https://huggingface.co/spaces/animtex/AIMoCap",
+        "Kimodo": "https://huggingface.co/spaces/nvidia/Kimodo",
+        "HY-Motion-1.0": "https://huggingface.co/spaces/tencent/HY-Motion-1.0",
+        "MotionGPT": "https://huggingface.co/spaces/OpenMotionLab/MotionGPT",
+    }
+    by_title = {item["title"]: item for item in items}
+    for title, hf_url in required_hf.items():
+        if by_title.get(title, {}).get("hf") != hf_url:
+            fail(f"{title}: expected HF demo {hf_url}")
 
     readme = README_PATH.read_text(encoding="utf-8")
+    if "## Featured" in readme or "**Featured**" in readme:
+        fail("README must not contain a Featured section or Featured label")
+    if "Human Motion Research Map" not in readme:
+        fail("README must include the Human Motion Research Map")
+    if not DIAGRAM_PATH.exists():
+        fail("assets/human-motion-framework.svg is missing")
     if "utm_source=awesome_human_motion" not in readme:
         fail("AIMoCap UTM links are missing from README")
     if "img.shields.io/github/stars/" not in readme:

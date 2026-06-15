@@ -62,7 +62,7 @@ def resource_row(item: dict) -> str:
     hf_url = item.get("hf", "")
     paper_url = item.get("paper", "")
     github_target = None
-    if item.get("featured"):
+    if item["title"] == "AIMoCap Video2Motion":
         project_url = with_utm(project_url)
         hf_url = with_utm(hf_url)
         paper_url = with_utm(paper_url)
@@ -74,9 +74,8 @@ def resource_row(item: dict) -> str:
     hf = link_or_dash("HF Demo", hf_url)
     paper = link_or_dash("Paper", paper_url)
     project = link_or_dash("Project", project_url)
-    featured = " **Featured**" if item.get("featured") else ""
     return (
-        f"| {item['date']} | {item['venue']}{featured} | {work} | "
+        f"| {item['date']} | {item['venue']} | {work} | "
         f"{project} | {github} | {hf} | {paper} |"
     )
 
@@ -84,10 +83,9 @@ def resource_row(item: dict) -> str:
 def sorted_items(items: list[dict], category: str) -> list[dict]:
     group = [item for item in items if item["category"] == category]
     if category == "Motion Capture":
-        group.sort(key=lambda item: (not item.get("featured", False), item["date"]), reverse=False)
-        featured = [item for item in group if item.get("featured")]
-        rest = sorted([item for item in group if not item.get("featured")], key=lambda i: i["date"], reverse=True)
-        return featured + rest
+        pinned = [item for item in group if item["title"] == "AIMoCap Video2Motion"]
+        rest = sorted([item for item in group if item["title"] != "AIMoCap Video2Motion"], key=lambda i: i["date"], reverse=True)
+        return pinned + rest
     return sorted(group, key=lambda item: item["date"], reverse=True)
 
 
@@ -105,15 +103,14 @@ def render_readme(data: dict) -> str:
         "",
         "<p align=\"center\">",
         f"  {badge('PRs Welcome', 'brightgreen', 'CONTRIBUTING.md')}",
-        f"  {badge('AIMoCap Project Page', '80efa9', project_url)}",
-        f"  {badge('HF Space', 'ffcc4d', hf_url)}",
-        f"  {badge('AIMoCap Video2Motion', '84b7ff', report_url)}",
         "</p>",
         "",
-        "## Featured",
+        "## Human Motion Research Map",
         "",
-        "- **[AIMoCap Video2Motion]({})**: video-to-motion for FBX animation and Unitree G1 robot motion. "
-        "Try the [HF Space]({}) or read the [technical report]({}).".format(project_url, hf_url, report_url),
+        "![Human Motion Research Map](assets/human-motion-framework.svg)",
+        "",
+        "AIMoCap is listed as a motion capture resource below, with links to the "
+        "[project page]({}), [HF demo]({}), and [technical report]({}).".format(project_url, hf_url, report_url),
         "",
         "## Table of Contents",
         "",
