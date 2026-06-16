@@ -1,127 +1,153 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
   <title id="title">Human Motion Research Map</title>
-  <desc id="desc">A structured map of human motion research: capture builds datasets, datasets feed back to capture and support generation and interaction, and these resources drive humanoid simulation, games and animation, and embodied AI.</desc>
+  <desc id="desc">A three-layer research map for human motion: data layer, technique layer, and application layer. Motion capture creates captured motion data and datasets; datasets feed back to capture and support generation, interaction, and humanoid simulation; applications include games, animation, and embodied AI.</desc>
   <defs>
-    <marker id="arrow-dark" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M2,2 L10,6 L2,10 Z" fill="#344955"/>
+    <marker id="arrow-slate" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#31424d"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2f6fa3"/>
     </marker>
     <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M2,2 L10,6 L2,10 Z" fill="#1f7a5a"/>
+      <path d="M2,2 L10,6 L2,10 Z" fill="#247553"/>
     </marker>
     <style>
       .title{font:700 31px Arial,Helvetica,sans-serif;fill:#13212b}
-      .subtitle{font:400 15px Arial,Helvetica,sans-serif;fill:#5d6a73}
-      .stage{font:700 11px Arial,Helvetica,sans-serif;fill:#7a8790;letter-spacing:.75px}
-      .box{fill:#fff;stroke:#cfd8df;stroke-width:1.4;rx:18}
-      .capture{fill:#f2f8ff;stroke:#8fb6dc}
-      .data{fill:#f4fbf5;stroke:#91c9a2}
-      .model{fill:#f8f5ff;stroke:#b8a8df}
-      .sim{fill:#fff8ec;stroke:#ddb46d}
-      .app{fill:#f8fafb;stroke:#bec8d0}
-      .label{font:700 19px Arial,Helvetica,sans-serif;fill:#13212b}
-      .note{font:400 12.5px Arial,Helvetica,sans-serif;fill:#52616b}
-      .chip{fill:#fff;stroke:#d8e1e7;stroke-width:1;rx:11}
-      .chipText{font:700 12.5px Arial,Helvetica,sans-serif;fill:#27343d}
-      .line{fill:none;stroke:#344955;stroke-width:2.1;marker-end:url(#arrow-dark)}
-      .stem{fill:none;stroke:#1f7a5a;stroke-width:2}
-      .appLine{fill:none;stroke:#1f7a5a;stroke-width:2.2;marker-end:url(#arrow-green)}
-      .feedback{fill:none;stroke:#6f8390;stroke-width:1.75;stroke-dasharray:7 6;marker-end:url(#arrow-dark)}
-      .edgeLabel{font:700 11px Arial,Helvetica,sans-serif;fill:#1f7a5a;letter-spacing:.15px}
-      .edgeLabelDark{font:700 11px Arial,Helvetica,sans-serif;fill:#53636d;letter-spacing:.15px}
-      .legendText{font:400 12px Arial,Helvetica,sans-serif;fill:#6a7680}
+      .subtitle{font:400 15px Arial,Helvetica,sans-serif;fill:#596872}
+      .bandLabel{font:700 14px Arial,Helvetica,sans-serif;fill:#334650;letter-spacing:.6px}
+      .bandNote{font:400 12px Arial,Helvetica,sans-serif;fill:#70808a}
+      .bandData{fill:#f5faf7;stroke:#d7e8dc;stroke-width:1.2}
+      .bandTech{fill:#f7f8fb;stroke:#dde4ec;stroke-width:1.2}
+      .bandApp{fill:#fffaf1;stroke:#eadcc4;stroke-width:1.2}
+      .box{fill:#ffffff;stroke:#cdd7df;stroke-width:1.35;rx:12}
+      .dataBox{stroke:#92c8a4}
+      .techBox{stroke:#99b8d4}
+      .simBox{stroke:#d7b56d}
+      .appBox{stroke:#c5ccd3}
+      .nodeTitle{font:700 18px Arial,Helvetica,sans-serif;fill:#12222c}
+      .nodeText{font:400 12.5px Arial,Helvetica,sans-serif;fill:#53646f}
+      .chip{fill:#fafdff;stroke:#d6e0e7;stroke-width:1;rx:10}
+      .chipText{font:700 12px Arial,Helvetica,sans-serif;fill:#2c3d47}
+      .line{fill:none;stroke:#31424d;stroke-width:2;marker-end:url(#arrow-slate)}
+      .dataLine{fill:none;stroke:#2f6fa3;stroke-width:2.15;marker-end:url(#arrow-blue)}
+      .appLine{fill:none;stroke:#247553;stroke-width:2.15;marker-end:url(#arrow-green)}
+      .bus{fill:none;stroke:#2f6fa3;stroke-width:2.15}
+      .appBus{fill:none;stroke:#247553;stroke-width:2.15}
+      .feedback{fill:none;stroke:#7a8b96;stroke-width:1.8;stroke-dasharray:7 6;marker-end:url(#arrow-slate)}
+      .labelBlue{font:700 11px Arial,Helvetica,sans-serif;fill:#2f6fa3}
+      .labelGreen{font:700 11px Arial,Helvetica,sans-serif;fill:#247553}
+      .labelGray{font:700 11px Arial,Helvetica,sans-serif;fill:#61717b}
+      .junction{fill:#2f6fa3}
+      .appJunction{fill:#247553}
+      .legend{font:400 12px Arial,Helvetica,sans-serif;fill:#6a7780}
     </style>
   </defs>
 
-  <rect width="1280" height="760" fill="#ffffff"/>
-  <text class="title" x="50" y="58">Human Motion Research Map</text>
-  <text class="subtitle" x="50" y="84">A structured view of how capture, datasets, generative models, interaction models, and simulation form a reusable motion stack.</text>
+  <rect width="1280" height="820" fill="#ffffff"/>
+  <text class="title" x="50" y="56">Human Motion Research Map</text>
+  <text class="subtitle" x="50" y="82">A layered view of how motion data, learning techniques, and downstream applications reinforce each other.</text>
 
-  <text class="stage" x="80" y="145">SENSING &amp; RECOVERY</text>
-  <text class="stage" x="400" y="145">MOTION DATA LAYER</text>
-  <text class="stage" x="650" y="145">GENERATIVE / INTERACTION MODELS</text>
-  <text class="stage" x="930" y="145">PHYSICS &amp; CONTROL</text>
-  <text class="stage" x="335" y="624">APPLICATIONS</text>
+  <rect class="bandData" x="38" y="118" width="1204" height="176" rx="14"/>
+  <rect class="bandTech" x="38" y="318" width="1204" height="260" rx="14"/>
+  <rect class="bandApp" x="38" y="602" width="1204" height="150" rx="14"/>
 
-  <rect class="box capture" x="70" y="185" width="240" height="175" rx="18"/>
-  <text class="label" x="96" y="224">Motion Capture</text>
-  <text class="note" x="96" y="250">Recover motion from optical,</text>
-  <text class="note" x="96" y="268">video, and markerless sensing.</text>
-  <rect class="chip" x="96" y="294" width="63" height="30" rx="11"/><text class="chipText" x="112" y="314">Vicon</text>
-  <rect class="chip" x="168" y="294" width="86" height="30" rx="11"/><text class="chipText" x="185" y="314">AIMoCap</text>
-  <rect class="chip" x="96" y="328" width="72" height="30" rx="11"/><text class="chipText" x="115" y="348">WHAM</text>
+  <text class="bandLabel" x="58" y="147">Data Layer</text>
+  <text class="bandNote" x="58" y="168">observations, recovered trajectories, datasets</text>
+  <text class="bandLabel" x="58" y="347">Technique Layer</text>
+  <text class="bandNote" x="58" y="368">capture, generation, interaction modeling, simulation</text>
+  <text class="bandLabel" x="58" y="631">Application Layer</text>
+  <text class="bandNote" x="58" y="652">creative production, robots, and embodied agents</text>
 
-  <rect class="box data" x="390" y="185" width="240" height="175" rx="18"/>
-  <text class="label" x="416" y="224">Datasets</text>
-  <text class="note" x="416" y="250">Motion corpora, labels,</text>
-  <text class="note" x="416" y="268">and evaluation benchmarks.</text>
-  <rect class="chip" x="416" y="294" width="75" height="30" rx="11"/><text class="chipText" x="434" y="314">AMASS</text>
-  <rect class="chip" x="501" y="294" width="104" height="30" rx="11"/><text class="chipText" x="518" y="314">HumanML3D</text>
-  <rect class="chip" x="416" y="328" width="70" height="30" rx="11"/><text class="chipText" x="433" y="348">BABEL</text>
+  <rect class="box dataBox" x="315" y="160" width="225" height="98" rx="12"/>
+  <text class="nodeTitle" x="340" y="194">Captured Motion Data</text>
+  <text class="nodeText" x="340" y="217">video, markers, 3D pose,</text>
+  <text class="nodeText" x="340" y="235">SMPL tracks, trajectories</text>
 
-  <rect class="box model" x="650" y="185" width="240" height="175" rx="18"/>
-  <text class="label" x="676" y="224">Motion Generation</text>
-  <text class="note" x="676" y="250">Synthesize controllable</text>
-  <text class="note" x="676" y="268">3D motion from priors.</text>
-  <rect class="chip" x="676" y="294" width="82" height="30" rx="11"/><text class="chipText" x="693" y="314">Kimodo</text>
-  <rect class="chip" x="768" y="294" width="108" height="30" rx="11"/><text class="chipText" x="783" y="314">HY-Motion</text>
-  <rect class="chip" x="676" y="328" width="96" height="30" rx="11"/><text class="chipText" x="693" y="348">MotionGPT</text>
+  <rect class="box dataBox" x="675" y="154" width="270" height="110" rx="12"/>
+  <text class="nodeTitle" x="700" y="188">Human Motion Datasets</text>
+  <text class="nodeText" x="700" y="211">curated corpora for learning,</text>
+  <text class="nodeText" x="700" y="229">evaluation, and retargeting</text>
+  <rect class="chip" x="700" y="240" width="70" height="26" rx="10"/><text class="chipText" x="716" y="258">AMASS</text>
+  <rect class="chip" x="780" y="240" width="102" height="26" rx="10"/><text class="chipText" x="795" y="258">HumanML3D</text>
+  <rect class="chip" x="884" y="240" width="58" height="26" rx="10"/><text class="chipText" x="895" y="258">BABEL</text>
 
-  <rect class="box model" x="650" y="400" width="240" height="175" rx="18"/>
-  <text class="label" x="676" y="439">Motion Interaction</text>
-  <text class="note" x="676" y="465">Model contact, reaction,</text>
-  <text class="note" x="676" y="483">and scene context.</text>
-  <rect class="chip" x="676" y="509" width="82" height="30" rx="11"/><text class="chipText" x="692" y="529">InterGen</text>
-  <rect class="chip" x="768" y="509" width="82" height="30" rx="11"/><text class="chipText" x="787" y="529">BEHAVE</text>
-  <rect class="chip" x="676" y="543" width="82" height="30" rx="11"/><text class="chipText" x="691" y="563">InterDiff</text>
+  <rect class="box techBox" x="80" y="392" width="230" height="152" rx="12"/>
+  <text class="nodeTitle" x="105" y="426">Motion Capture</text>
+  <text class="nodeText" x="105" y="449">recover human motion from</text>
+  <text class="nodeText" x="105" y="467">optical and video signals</text>
+  <rect class="chip" x="105" y="486" width="60" height="26" rx="10"/><text class="chipText" x="119" y="504">Vicon</text>
+  <rect class="chip" x="174" y="486" width="82" height="26" rx="10"/><text class="chipText" x="190" y="504">AIMoCap</text>
+  <rect class="chip" x="105" y="516" width="68" height="26" rx="10"/><text class="chipText" x="122" y="534">WHAM</text>
 
-  <rect class="box sim" x="950" y="255" width="250" height="185" rx="18"/>
-  <text class="label" x="976" y="294">Humanoid Simulation</text>
-  <text class="note" x="976" y="320">Retarget motion into physics,</text>
-  <text class="note" x="976" y="338">control, and robot policy loops.</text>
-  <rect class="chip" x="976" y="364" width="82" height="30" rx="11"/><text class="chipText" x="993" y="384">Kimodo</text>
-  <rect class="chip" x="1068" y="364" width="95" height="30" rx="11"/><text class="chipText" x="1085" y="384">Unitree G1</text>
-  <rect class="chip" x="976" y="398" width="89" height="30" rx="11"/><text class="chipText" x="993" y="418">Isaac Lab</text>
+  <rect class="box techBox" x="380" y="392" width="230" height="152" rx="12"/>
+  <text class="nodeTitle" x="405" y="426">Motion Generation</text>
+  <text class="nodeText" x="405" y="449">generate controllable motion</text>
+  <text class="nodeText" x="405" y="467">from text, music, or priors</text>
+  <rect class="chip" x="405" y="486" width="76" height="26" rx="10"/><text class="chipText" x="420" y="504">Kimodo</text>
+  <rect class="chip" x="490" y="486" width="96" height="26" rx="10"/><text class="chipText" x="504" y="504">HY-Motion</text>
+  <rect class="chip" x="405" y="516" width="92" height="26" rx="10"/><text class="chipText" x="421" y="534">MotionGPT</text>
 
-  <rect class="box app" x="360" y="645" width="250" height="75" rx="18"/>
-  <text class="label" x="391" y="680">Games &amp; Animation</text>
-  <text class="note" x="420" y="703">characters, FBX, avatars</text>
+  <rect class="box techBox" x="660" y="392" width="230" height="152" rx="12"/>
+  <text class="nodeTitle" x="685" y="426">Motion Interaction</text>
+  <text class="nodeText" x="685" y="449">model human-scene, human-</text>
+  <text class="nodeText" x="685" y="467">object, and human-human motion</text>
+  <rect class="chip" x="685" y="486" width="78" height="26" rx="10"/><text class="chipText" x="700" y="504">InterGen</text>
+  <rect class="chip" x="772" y="486" width="78" height="26" rx="10"/><text class="chipText" x="789" y="504">BEHAVE</text>
+  <rect class="chip" x="685" y="516" width="78" height="26" rx="10"/><text class="chipText" x="699" y="534">InterDiff</text>
 
-  <rect class="box app" x="950" y="645" width="250" height="75" rx="18"/>
-  <text class="label" x="1007" y="680">Embodied AI</text>
-  <text class="note" x="1010" y="703">humanoids and robot skills</text>
+  <rect class="box simBox" x="965" y="392" width="245" height="152" rx="12"/>
+  <text class="nodeTitle" x="990" y="426">Humanoid Simulation</text>
+  <text class="nodeText" x="990" y="449">retarget motion into physics,</text>
+  <text class="nodeText" x="990" y="467">control, and robot policies</text>
+  <rect class="chip" x="990" y="486" width="76" height="26" rx="10"/><text class="chipText" x="1005" y="504">Kimodo</text>
+  <rect class="chip" x="1075" y="486" width="88" height="26" rx="10"/><text class="chipText" x="1090" y="504">Unitree G1</text>
+  <rect class="chip" x="990" y="516" width="86" height="26" rx="10"/><text class="chipText" x="1005" y="534">Isaac Lab</text>
 
-  <path class="line" d="M310 272 H390"/>
-  <text class="edgeLabelDark" x="329" y="258">motion evidence</text>
+  <rect class="box appBox" x="330" y="660" width="270" height="70" rx="12"/>
+  <text class="nodeTitle" x="371" y="690">Games &amp; Animation</text>
+  <text class="nodeText" x="389" y="713">FBX, avatars, character motion</text>
 
-  <path class="feedback" d="M470 185 V122 H190 V185"/>
-  <text class="edgeLabelDark" x="277" y="116">data feedback improves capture accuracy</text>
+  <rect class="box appBox" x="950" y="660" width="250" height="70" rx="12"/>
+  <text class="nodeTitle" x="1009" y="690">Embodied AI</text>
+  <text class="nodeText" x="997" y="713">humanoid robots and agents</text>
 
-  <path class="line" d="M630 272 H650"/>
-  <text class="edgeLabelDark" x="618" y="258">training</text>
+  <path class="dataLine" d="M195 392 V282 H428 V258"/>
+  <text class="labelBlue" x="222" y="276">capture produces motion observations</text>
 
-  <path class="line" d="M510 360 V488 H650"/>
-  <text class="edgeLabelDark" x="528" y="477">interaction data</text>
+  <path class="dataLine" d="M540 209 H675"/>
+  <text class="labelBlue" x="565" y="196">curation</text>
 
-  <path class="line" d="M550 185 V160 H1075 V255"/>
-  <text class="edgeLabelDark" x="724" y="154">dataset priors and benchmarks</text>
+  <path class="feedback" d="M675 276 H195 V392"/>
+  <text class="labelGray" x="300" y="303">data feedback improves capture accuracy</text>
 
-  <path class="line" d="M890 272 H925 V330 H950"/>
-  <text class="edgeLabelDark" x="902" y="258">motion skills</text>
+  <path class="bus" d="M810 264 V338 H195 V392"/>
+  <circle class="junction" cx="810" cy="338" r="4"/>
+  <circle class="junction" cx="195" cy="338" r="4"/>
 
-  <path class="line" d="M890 488 H920 V382 H950"/>
-  <text class="edgeLabelDark" x="902" y="477">contacts</text>
+  <path class="bus" d="M810 338 H495 V392"/>
+  <circle class="junction" cx="495" cy="338" r="4"/>
+  <path class="bus" d="M810 338 H775 V392"/>
+  <circle class="junction" cx="775" cy="338" r="4"/>
+  <path class="dataLine" d="M810 338 H1088 V392"/>
+  <text class="labelBlue" x="830" y="326">datasets train and benchmark techniques</text>
 
-  <path class="stem" d="M190 360 V605"/>
-  <path class="stem" d="M770 360 V386 H610 V605"/>
-  <path class="stem" d="M650 488 H610 V605"/>
-  <path class="stem" d="M190 605 H485"/>
-  <path class="stem" d="M610 605 H485"/>
-  <path class="appLine" d="M485 605 V645"/>
-  <text class="edgeLabel" x="296" y="594">animation assets and reusable motion</text>
+  <path class="line" d="M610 460 H660"/>
+  <path class="line" d="M890 460 H965"/>
+  <text class="labelGray" x="632" y="449">conditioning</text>
+  <text class="labelGray" x="908" y="449">contacts</text>
 
-  <path class="appLine" d="M1075 440 V645"/>
-  <text class="edgeLabel" x="1090" y="540">robot policy transfer</text>
+  <path class="appBus" d="M195 544 V590 H465"/>
+  <circle class="appJunction" cx="195" cy="590" r="4"/>
+  <path class="appBus" d="M495 544 V590 H465"/>
+  <circle class="appJunction" cx="495" cy="590" r="4"/>
+  <path class="appBus" d="M775 544 V590 H465"/>
+  <circle class="appJunction" cx="775" cy="590" r="4"/>
+  <path class="appLine" d="M465 590 V660"/>
+  <text class="labelGreen" x="332" y="585">motion assets for creative production</text>
 
-  <rect x="70" y="729" width="1140" height="1" fill="#edf2f5"/>
-  <text class="legendText" x="70" y="748">Solid arrows: primary data/model flow. Dashed arrow: dataset-driven feedback loop.</text>
+  <path class="appLine" d="M1088 544 V660"/>
+  <text class="labelGreen" x="1100" y="606">policy transfer</text>
+
+  <rect x="64" y="778" width="1152" height="1" fill="#edf2f5"/>
+  <text class="legend" x="64" y="798">Solid blue arrows: data and learning flow. Dashed arrow: dataset feedback to capture. Green arrows: application flow.</text>
 </svg>

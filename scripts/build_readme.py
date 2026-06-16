@@ -97,9 +97,8 @@ def render_readme(data: dict) -> str:
     lines: list[str] = [
         "# Awesome Human Motion [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
         "",
-        "A curated list of papers, projects, demos, and datasets for **motion capture, "
-        "motion generation, humanoid motion, motion interaction, motion video generation, "
-        "and human motion datasets**.",
+        "A curated awesome list for **human motion capture, motion generation, motion interaction, "
+        "humanoid simulation, motion video generation, and human motion datasets**.",
         "",
         "<p align=\"center\">",
         f"  {badge('PRs Welcome', 'brightgreen', 'CONTRIBUTING.md')}",
@@ -109,8 +108,19 @@ def render_readme(data: dict) -> str:
         "",
         "![Human Motion Research Map](assets/human-motion-framework.svg)",
         "",
-        "AIMoCap is listed as a motion capture resource below, with links to the "
-        "[project page]({}), [HF demo]({}), and [technical report]({}).".format(project_url, hf_url, report_url),
+        "## What This List Covers",
+        "",
+        "This awesome human motion list tracks human motion capture, video-to-motion, text-to-motion, "
+        "motion generation, motion interaction, humanoid robot motion, embodied AI, motion video "
+        "generation, and human motion datasets. AIMoCap appears as a motion capture resource in the "
+        "table below with links to the [project page]({}), [HF demo]({}), and [technical report]({}).".format(project_url, hf_url, report_url),
+        "",
+        "## Related Awesome Lists",
+        "",
+        "- [Foruck/Awesome-Human-Motion](https://github.com/Foruck/Awesome-Human-Motion)",
+        "- [derikon/awesome-human-motion](https://github.com/derikon/awesome-human-motion)",
+        "- [Zilize/awesome-text-to-motion](https://github.com/Zilize/awesome-text-to-motion)",
+        "- [showlab/Awesome-Video-Diffusion](https://github.com/showlab/Awesome-Video-Diffusion)",
         "",
         "## Table of Contents",
         "",

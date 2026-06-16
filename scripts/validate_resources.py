@@ -106,8 +106,31 @@ def validate() -> None:
         fail("README must not contain a Featured section or Featured label")
     if "Human Motion Research Map" not in readme:
         fail("README must include the Human Motion Research Map")
+    for phrase in (
+        "What This List Covers",
+        "Related Awesome Lists",
+        "awesome human motion",
+        "human motion capture",
+        "video-to-motion",
+        "text-to-motion",
+        "motion generation",
+        "humanoid robot motion",
+        "embodied AI",
+    ):
+        if phrase not in readme:
+            fail(f"README missing search/discovery phrase: {phrase}")
     if not DIAGRAM_PATH.exists():
         fail("assets/human-motion-framework.svg is missing")
+    diagram = DIAGRAM_PATH.read_text(encoding="utf-8")
+    for phrase in (
+        "Data Layer",
+        "Technique Layer",
+        "Application Layer",
+        "Captured Motion Data",
+        "Human Motion Datasets",
+    ):
+        if phrase not in diagram:
+            fail(f"diagram missing three-layer map phrase: {phrase}")
     if "utm_source=awesome_human_motion" not in readme:
         fail("AIMoCap UTM links are missing from README")
     if "img.shields.io/github/stars/" not in readme:

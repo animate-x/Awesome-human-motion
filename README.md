@@ -1,6 +1,6 @@
 # Awesome Human Motion [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of papers, projects, demos, and datasets for **motion capture, motion generation, humanoid motion, motion interaction, motion video generation, and human motion datasets**.
+A curated awesome list for **human motion capture, motion generation, motion interaction, humanoid simulation, motion video generation, and human motion datasets**.
 
 <p align="center">
   <a href="CONTRIBUTING.md"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs%20Welcome-brightgreen"></a>
@@ -10,7 +10,16 @@ A curated list of papers, projects, demos, and datasets for **motion capture, mo
 
 ![Human Motion Research Map](assets/human-motion-framework.svg)
 
-AIMoCap is listed as a motion capture resource below, with links to the [project page](https://animate-x.github.io/aimocap/?utm_source=awesome_human_motion&utm_medium=readme&utm_campaign=curation), [HF demo](https://huggingface.co/spaces/animtex/AIMoCap?utm_source=awesome_human_motion&utm_medium=readme&utm_campaign=curation), and [technical report](https://github.com/animate-x/aimocap-video2motion?utm_source=awesome_human_motion&utm_medium=readme&utm_campaign=curation).
+## What This List Covers
+
+This awesome human motion list tracks human motion capture, video-to-motion, text-to-motion, motion generation, motion interaction, humanoid robot motion, embodied AI, motion video generation, and human motion datasets. AIMoCap appears as a motion capture resource in the table below with links to the [project page](https://animate-x.github.io/aimocap/?utm_source=awesome_human_motion&utm_medium=readme&utm_campaign=curation), [HF demo](https://huggingface.co/spaces/animtex/AIMoCap?utm_source=awesome_human_motion&utm_medium=readme&utm_campaign=curation), and [technical report](https://github.com/animate-x/aimocap-video2motion?utm_source=awesome_human_motion&utm_medium=readme&utm_campaign=curation).
+
+## Related Awesome Lists
+
+- [Foruck/Awesome-Human-Motion](https://github.com/Foruck/Awesome-Human-Motion)
+- [derikon/awesome-human-motion](https://github.com/derikon/awesome-human-motion)
+- [Zilize/awesome-text-to-motion](https://github.com/Zilize/awesome-text-to-motion)
+- [showlab/Awesome-Video-Diffusion](https://github.com/showlab/Awesome-Video-Diffusion)
 
 ## Table of Contents
 
