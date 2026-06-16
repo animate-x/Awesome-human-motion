@@ -18,13 +18,20 @@ README_PATH = ROOT / "README.md"
 
 UTM = "utm_source=awesome_human_motion&utm_medium=readme&utm_campaign=curation"
 CATEGORIES = [
+    "Reviews and Surveys",
     "Motion Capture",
+    "Human Pose Estimation and Motion Reconstruction",
     "Motion Generation",
+    "Motion Editing",
+    "Motion Stylization",
     "Motion Interaction",
-    "Humanoid Simulation",
+    "Human-Object and Human-Scene Interaction",
+    "Humanoid Simulation and Robot Motion",
     "Motion Video Generation",
-    "Datasets",
-    "Surveys and Benchmarks",
+    "Human Avatar and Reconstruction",
+    "Human Motion Understanding",
+    "Datasets and Benchmarks",
+    "Bio Motion and Biomechanics",
 ]
 
 
@@ -98,7 +105,8 @@ def render_readme(data: dict) -> str:
         "# Awesome Human Motion [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
         "",
         "A curated awesome list for **human motion capture, motion generation, motion interaction, "
-        "humanoid simulation, motion video generation, and human motion datasets**.",
+        "humanoid simulation, motion video generation, human motion datasets, pose estimation, "
+        "motion editing, motion stylization, human reconstruction, and motion understanding**.",
         "",
         "<p align=\"center\">",
         f"  {badge('PRs Welcome', 'brightgreen', 'CONTRIBUTING.md')}",
@@ -111,7 +119,8 @@ def render_readme(data: dict) -> str:
         "## What This List Covers",
         "",
         "This awesome human motion list tracks human motion capture, video-to-motion, text-to-motion, "
-        "motion generation, motion interaction, humanoid robot motion, embodied AI, motion video "
+        "motion generation, motion editing, motion stylization, motion interaction, pose estimation, "
+        "human reconstruction, motion understanding, humanoid robot motion, embodied AI, motion video "
         "generation, and human motion datasets. AIMoCap appears as a motion capture resource in the "
         "table below with links to the [project page]({}), [HF demo]({}), and [technical report]({}).".format(project_url, hf_url, report_url),
         "",
@@ -161,8 +170,8 @@ def render_readme(data: dict) -> str:
         "python scripts/validate_resources.py",
         "```",
         "",
-        "Entries are curated for relevance to human motion capture, generation, interaction, "
-        "humanoid simulation, human-centric video generation, and datasets.",
+        "Entries are curated for relevance to human motion capture, generation, editing, stylization, "
+        "interaction, humanoid simulation, robot motion, human reconstruction, video generation, and datasets.",
         "",
     ]
     return "\n".join(lines)

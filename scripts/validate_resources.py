@@ -14,13 +14,20 @@ README_PATH = ROOT / "README.md"
 DIAGRAM_PATH = ROOT / "assets" / "human-motion-framework.svg"
 
 CATEGORIES = [
+    "Reviews and Surveys",
     "Motion Capture",
+    "Human Pose Estimation and Motion Reconstruction",
     "Motion Generation",
+    "Motion Editing",
+    "Motion Stylization",
     "Motion Interaction",
-    "Humanoid Simulation",
+    "Human-Object and Human-Scene Interaction",
+    "Humanoid Simulation and Robot Motion",
     "Motion Video Generation",
-    "Datasets",
-    "Surveys and Benchmarks",
+    "Human Avatar and Reconstruction",
+    "Human Motion Understanding",
+    "Datasets and Benchmarks",
+    "Bio Motion and Biomechanics",
 ]
 SENSITIVE_TERMS = [
     "wen" + "lin",
@@ -65,8 +72,8 @@ def validate_links(item: dict) -> None:
 def validate() -> None:
     data = load_data()
     items = data.get("resources", [])
-    if not 60 <= len(items) <= 90:
-        fail(f"expected 60-90 resources, found {len(items)}")
+    if not 150 <= len(items) <= 240:
+        fail(f"expected 150-240 resources, found {len(items)}")
 
     seen_titles: set[str] = set()
     for item in items:
@@ -114,6 +121,11 @@ def validate() -> None:
         "video-to-motion",
         "text-to-motion",
         "motion generation",
+        "motion editing",
+        "motion stylization",
+        "pose estimation",
+        "human reconstruction",
+        "motion understanding",
         "humanoid robot motion",
         "embodied AI",
     ):
